@@ -1,12 +1,12 @@
 //Run GUI Programs on Startup With Autostart
 //Autostart is the best way to run GUI-based Raspberry Pi programs on startup. It works by ensuring that both the X Window system and the LXDE desktop environment are available before the system runs any of the scheduled programs.
 
-sudo nano /etc/xdg/autostart/{app name}.desktop
+sudo nano /etc/xdg/autostart/death_watch_01.desktop
 
 //In the .desktop file, add the following lines of code:
 
 [Desktop Entry]
-Name={app name}
-Exec=/usr/bin/python3 /home/pi/{app name}.py
+Name=Death Watch 01
+Exec=/usr/bin/python3 /home/pi/death_watch_01.py
 
-//In this file, replace the value for the Name field with your project/script name. After that, save the file, and then restart the Pi.
+//After that, save the file, and then restart the Pi.
